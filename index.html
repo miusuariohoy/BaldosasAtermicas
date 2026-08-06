@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baldosas Atérmicas DOMSELAAR</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f5f5f5; color: #333; }
+    header { background: #0b3b78; color: #fff; text-align: center; padding: 25px; }
+    header img { max-width: 300px; max-height: 230px; width: auto; height: auto; object-fit: contain; border-radius: 8px; }
+    h1 { margin: 12px 0 4px; font-size: 34px; letter-spacing: 1px; }
+    header p { margin: 8px 0 0; }
+    .wrap { max-width: 1000px; margin: auto; padding: 20px; }
+    .gal img, .gal video { width: 100%; height: 300px; object-fit: cover; border-radius: 10px; }
+    .gal { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+    h2 { color: #0b3b78; border-bottom: 3px solid #0b3b78; padding-bottom: 5px; }
+    .btn { background: #25D366; color: #fff; padding: 12px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block; }
+    .btn:hover { background: #1da851; }
+    .wa { position: fixed; right: 20px; bottom: 20px; background: #25D366; color: #fff; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; font-size: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+    iframe { width: 100%; height: 300px; border: 0; border-radius: 10px; }
+    .contacto p { font-size: 18px; line-height: 1.8; }
+    .productos { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 30px; }
+    .producto { background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 16px; text-align: center; }
+    .producto img.foto, .producto .fotos img, .producto .carrusel img { width: 100%; height: 300px; object-fit: cover; border-radius: 8px; }
+    .carrusel { position: relative; margin-bottom: 8px; }
+    .carrusel .prev, .carrusel .next { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,.5); color: #fff; border: none; border-radius: 50%; width: 32px; height: 32px; cursor: pointer; font-size: 18px; line-height: 1; z-index: 2; }
+    .carrusel .prev { left: 6px; }
+    .carrusel .next { right: 6px; }
+    .carrusel .prev:hover, .carrusel .next:hover { background: rgba(0,0,0,.75); }
+    .producto h3 { margin: 10px 0 4px; color: #0b3b78; }
+    .producto p { margin: 0; color: #666; }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 40px; }
+    .feature { background: #fff; padding: 20px; border-radius: 10px; border: 1px solid #ddd; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+    .feature h3 { color: #0b3b78; margin-top: 0; margin-bottom: 10px; font-size: 20px; }
+    .feature p { color: #555; margin: 0; font-size: 16px; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="DOMSELAAR">
+    <h1>Baldosas Atérmicas DOMSELAAR</h1>
+    <p>Calidad para piscinas, patios y terrazas.</p>
+  </header>
+
+  <div class="wrap">
+    <div class="features">
+      <div class="feature">
+        <h3>☀️ Atérmicos</h3>
+        <p>No levantan temperatura al sol, permitiendo caminar descalzo con total comodidad.</p>
+      </div>
+      <div class="feature">
+        <h3>💧 Antideslizantes</h3>
+        <p>Textura porosa diseñada para evitar resbalones alrededor del espejo de agua.</p>
+      </div>
+      <div class="feature">
+        <h3>🛠️ Alta Resistencia</h3>
+        <p>Fabricados con materiales premoldeados de primera calidad, resistentes al exterior.</p>
+      </div>
+    </div>
+
+    <h2>Nuestros Productos</h2>
+    <div class="productos">
+      <div class="producto">
+        <img class="foto" src="blancas1.jpg" alt="Baldosas blancas">
+        <h3>Baldosas Atérmicas Blancas</h3>
+      </div>
+      <div class="producto">
+        <img class="foto" src="marfil1.jpg" alt="Baldosas marfil">
+        <h3>Baldosas Atérmicas Marfil</h3>
+      </div>
+      <div class="producto">
+        <div class="carrusel" data-fotos='["medida1.jpg","medida2.jpg","medida3.jpg"]'>
+          <img src="medida1.jpg" alt="Tamaño 50 x 50 cm">
+          <button class="prev" aria-label="Anterior">&#10094;</button>
+          <button class="next" aria-label="Siguiente">&#10095;</button>
+        </div>
+        <h3>Tamaño 50 x 50 cm</h3>
+      </div>
+      <div class="producto">
+        <div class="carrusel" data-fotos='["ballena1.jpg","ballena2.jpg","n03_rec.jpg"]'>
+          <img src="ballena1.jpg" alt="Borde ballena" style="object-fit: contain; background: #fff;">
+          <button class="prev" aria-label="Anterior">&#10094;</button>
+          <button class="next" aria-label="Siguiente">&#10095;</button>
+        </div>
+        <h3>Borde Ballena</h3>
+      </div>
+      <div class="producto">
+        <div class="carrusel" data-fotos='["bordeL1.jpg","bordeL2.jpg","bordeL1 (2).jpg"]'>
+          <img src="bordeL1.jpg" alt="Borde L">
+          <button class="prev" aria-label="Anterior">&#10094;</button>
+          <button class="next" aria-label="Siguiente">&#10095;</button>
+        </div>
+        <h3>Borde L</h3>
+      </div>
+      <div class="producto">
+        <h3>Solarium</h3>
+      </div>
+      <div class="producto">
+        <h3>Esquinero de Ballena</h3>
+      </div>
+      <div class="producto">
+        <h3>Arco Romano</h3>
+      </div>
+      <div class="producto">
+        <h3>Pastina</h3>
+      </div>
+    </div>
+
+    <h2>Galería</h2>
+    <div class="gal">
+      <video src="video.mp4" controls></video>
+      <img src="gal2.jpg" alt="Foto 2">
+      <img src="gal3.jpg" alt="Foto 3">
+      <img src="gal4.jpg" alt="Foto 4">
+      <img src="gal5.jpg" alt="Foto 5">
+      <img src="gal6.jpg" alt="Foto 6">
+    </div>
+
+    <h2>Contacto</h2>
+    <div class="contacto">
+      <p>📍 Venezuela 200, Domselaar<br>📱 11 2291-9234</p>
+      <p><a class="btn" href="https://wa.me/5491122919234">Solicitar presupuesto</a></p>
+    </div>
+
+    <h2>Ubicación</h2>
+    <iframe src="https://maps.google.com/maps?q=Venezuela%20200%20Domselaar&t=&z=15&ie=UTF8&iwloc=&output=embed" title="Ubicación"></iframe>
+  </div>
+
+  <a class="wa" href="https://wa.me/5491122919234">💬</a>
+
+  <script>
+    document.querySelectorAll('.carrusel').forEach(function (c) {
+      var fotos = JSON.parse(c.getAttribute('data-fotos'));
+      var img = c.querySelector('img');
+      var i = 0;
+      function show(k) { i = (k + fotos.length) % fotos.length; img.src = fotos[i]; }
+      c.querySelector('.prev').onclick = function () { show(i - 1); };
+      c.querySelector('.next').onclick = function () { show(i + 1); };
+    });
+  </script>
+</body>
+</html>
